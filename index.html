@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Dashboard</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <input type="checkbox" name="" id="menu-toggle">
+        <div class="sidebar">
+            <div class="brand">
+                <h3>
+                    <span class="lab la-wolf-pack-battalion"></span>
+                    My Dash
+                </h3>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-img" style="background-image: url(./img/avatar-1.png);"></div>
+                <div class="profile-info">
+                    <h2>Johan Moab</h2>
+                    <small>Administrador</small>
+                </div>
+                <div class="profile-action">
+                    <a href="" class="btn btn-white">
+                        <span class="las la-coins"></span>
+                        <div>$2.300</div>
+                    </a>
+                </div>
+                <div class="profile-icons">
+                    <span class="las la-user"></span>
+                    <span class="las la-comment-alt"></span>
+                    <span class="las la-file-invoice"></span>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-item">
+                    <a href="" class="active">
+                        <span class="las la-home"></span>
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-project-diagram"></span>
+                        <span>Projetos</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-tasks"></span>
+                        <span>Tarefas</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-columns"></span>
+                        <span>Kanban</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-users-cog"></span>
+                        <span>Usuários</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-user-ninja"></span>
+                        <span>Perfil</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-file-invoice"></span>
+                        <span>Faturas</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-cogs"></span>
+                        <span>Ferramentas</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Olá Moab</h3>
+                <p>Você ainda não concluiu as tarefas atribuídas a você e não 
+                    atualizou o status do seu projeto atual.</p>
+                <a href="" class="btn btn-block btn-white">Iniciar</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                <div class="head-icons">
+                    <span class="las la-search"></span>
+                    <span class="las la-comment-alt"></span>
+                    <span class="las la-bell"></span>
+                    <div class="head-avatar">
+                    <div class="avatar" style="background-image: url(./img/avatar-1.png);"></div>
+                    <span>Johan Moab</span></div>
+                </div>
+            </header>
+            <main>
+                <div class="page-header">
+                    <h1>Morning Heather</h1>
+                    <small>Tenha um ótimo dia!</small>
+                </div>
+                <div class="analytics">
+                    <div class="card engage-card">
+                        <div class="card-head">
+                            Vendas
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-wrapper">
+                                <div id="chart"></div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="card emails-card">
+                        <div class="card-head">
+                            Vendas
+                        </div>
+                        <div class="card-body">
+                            <div id="emailChart"></div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="emails-info">
+                                <div class="email-stat">
+                                    <span class="status bg-danger"></span>
+                                    <span>2 Aguardando</span>
+                                </div>
+                                <div class="email-stat">
+                                    <span class="status bg-ready"></span>
+                                    <span>221 Instalados</span>
+                                </div>
+                                <div class="email-stat">
+                                    <span class="status bg-warning"></span>
+                                    <span>20 Vistorias</span>
+                                </div>
+                                <div class="email-stat">
+                                    <span class="status bg-success"></span>
+                                    <span>197 Conectados</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card team-progress">
+                        <div class="card-head">
+                            <div class="team-head">
+                                <div>
+                                    <h3>Progresso da equipe</h3>
+                                    <small>890 Vendass</small>
+                                </div>
+                                <select name="" id="">
+                                    <option value="">User</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Autor</th>
+                                        <th>Empresa</th>
+                                        <th width="22%">Progresso</th>
+                                        <th>Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="./img/avatar-1.png" alt="">
+                                                </div>
+                                                <div class="team-details">
+                                                    <h4>Yan Moreira</h4>
+                                                    <small>Supervisão</small>
+                                                </div>
+                                        </div></td>
+                                        <td><div class="company-info">
+                                            <h4>Eletec Solar</h4>
+                                            <small>Vendas</small>
+                                        </div></td>
+                                        <td><div class="team-progress">
+                                            <h4>85%</h4>
+                                            <div class="progress-bar danger">
+                                                <div class="indicator success" style="width: 85%;"></div>
+                                            </div>
+                                        </div></td>
+                                        <td><a href="" class="btn btn-main">Ver</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="./img/avatar-1.png" alt="">
+                                                </div>
+                                                <div class="team-details">
+                                                    <h4>Esaú Delmondes</h4>
+                                                    <small>Qualidade</small>
+                                                </div>
+                                        </div></td>
+                                        <td><div class="company-info">
+                                            <h4>Eletec Solar</h4>
+                                            <small>Pós-Vendas</small>
+                                        </div></td>
+                                        <td><div class="team-progress">
+                                            <h4>45%</h4>
+                                            <div class="progress-bar danger">
+                                                <div class="indicator warning" style="width: 45%;"></div>
+                                            </div>
+                                        </div></td>
+                                        <td><a href="" class="btn btn-main">Ver</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="./img/avatar-1.png" alt="">
+                                                </div>
+                                                <div class="team-details">
+                                                    <h4>Elba Fernandes</h4>
+                                                    <small>Supervisão</small>
+                                                </div>
+                                        </div></td>
+                                        <td><div class="company-info">
+                                            <h4>Eletec Solar</h4>
+                                            <small>Contas</small>
+                                        </div></td>
+                                        <td><div class="team-progress">
+                                            <h4>25%</h4>
+                                            <div class="progress-bar danger">
+                                                <div class="indicator danger" style="width: 25%;"></div>
+                                            </div>
+                                        </div></td>
+                                        <td><a href="" class="btn btn-main">Ver</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card competitors">
+                        <div class="card-head">
+                            <h4>My Competitors</h4>
+                            <small>More than 400+ new members</small>
+                        </div>
+                        <div class="card-body">
+                            <div class="compete-info">
+                                <img src="./img/avatar-1.png" alt="">
+                                <div class="compete-details">
+                                    <h4>Cup & Green</h4>
+                                    <small>Study higway types</small>
+                                    <p>By: <a href="">Code resource</a></p>
+                                    <div class="compete-sales">
+                                        <h3>24.900</h3>
+                                        <span>Vendas</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="compete-info">
+                                <img src="./img/avatar-1.png" alt="">
+                                <div class="compete-details">
+                                    <h4>Cup & Green</h4>
+                                    <small>Study higway types</small>
+                                    <p>By: <a href="">Code resource</a></p>
+                                    <div class="compete-sales">
+                                        <h3>24.900</h3>
+                                        <span>Vendas</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            
+            </main>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./js/charts.js"></script>
+</body>
+</html>
